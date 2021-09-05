@@ -1,0 +1,24 @@
+{
+  "name": "react-library-ui",
+  "version": "0.0.1",
+  "description": "High performance react components library.",
+  "main": "src/index.js",
+  "scripts": {
+    "docz:dev": "docz dev",
+    "docz:build": "docz build",
+    "docz:serve": "docz build && docz serve"
+  },
+  "devDependencies": {
+    "docz": "^2.3.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "library",
+    "component"
+  ],
+  "author": "Haikel Fazzani",
+  "license": "MIT"
+}

@@ -1,0 +1,18 @@
+.btn {
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .6px;
+  line-height: 24px;
+  padding: 6px 24px;
+  pointer-events: auto;
+  color: #fff;
+  background: #1a73e8;
+  border: 0;
+  text-transform: capitalize;
+  transform: scale(1);
+  transition: transform .3s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+}
