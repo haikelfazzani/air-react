@@ -1,6 +1,6 @@
 {
   "name": "air-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "High performance react components library.",
   "main": "src/index.js",
   "files": [
@@ -9,9 +9,18 @@
   "scripts": {
     "docz:dev": "docz dev",
     "docz:build": "docz build",
-    "docz:serve": "docz build && docz serve"
+    "docz:serve": "docz build && docz serve",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@storybook/addon-actions": "^6.3.8",
+    "@storybook/addon-docs": "^6.3.8",
+    "@storybook/addon-essentials": "^6.3.8",
+    "@storybook/addon-links": "^6.3.8",
+    "@storybook/react": "^6.3.8",
+    "babel-loader": "^8.2.2",
     "docz": "^2.3.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

@@ -2,12 +2,15 @@
 .vscode
 .cache
 .gitignore
+.storybook
 
+storybook-static/
+stories/
+src/stories/
 docs/
 node_modules/
 dist/
 build/
 yarn.lock
 
-Todo.md
-Readme.md
+*.md

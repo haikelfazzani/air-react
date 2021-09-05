@@ -2,6 +2,7 @@
 .vscode
 .cache
 
+storybook-static/
 node_modules/
 dist/
 build/

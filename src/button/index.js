@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './index.css';
 
-export default function Button ({ children, onClick, clx, type = "button" }) {
+export default function Button ({ children, onClick, className, type = "button" }) {
   return (<button
-    className={clx}
+    className={className}
     type={type}
     onClick={onClick}>
     {children}
@@ -14,6 +14,6 @@ export default function Button ({ children, onClick, clx, type = "button" }) {
 Button.propTypes = {
   children: PropTypes.element,
   onClick: PropTypes.func,
-  clx: PropTypes.string,
+  className: PropTypes.string,
   type: PropTypes.string
 }
