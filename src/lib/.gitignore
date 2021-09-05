@@ -1,16 +1,11 @@
 .docz
 .vscode
 .cache
-.gitignore
-.storybook
 
 storybook-static/
-stories/
-src/stories/
-docs/
 node_modules/
 dist/
 build/
 yarn.lock
-
-*.md
+package-lock.json
+Todo.md
