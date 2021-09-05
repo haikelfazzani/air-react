@@ -5,6 +5,9 @@
 
 docs/
 node_modules/
+dist/
+build/
 yarn.lock
 
+Todo.md
 Readme.md

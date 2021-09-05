@@ -1,8 +1,11 @@
 {
-  "name": "react-library-ui",
+  "name": "air-react",
   "version": "0.0.1",
   "description": "High performance react components library.",
   "main": "src/index.js",
+  "files": [
+    "src/*"
+  ],
   "scripts": {
     "docz:dev": "docz dev",
     "docz:build": "docz build",
@@ -20,5 +23,13 @@
     "component"
   ],
   "author": "Haikel Fazzani",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://air-react.netlify.app",
+  "bugs": {
+    "url": "https://github.com/haikelfazzani/air-react-library/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haikelfazzani/air-react-library.git"
+  }
 }
