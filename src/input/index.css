@@ -1,0 +1,8 @@
+input {
+  padding: 6px 24px;
+  font-size: 14px;
+  line-height: 24px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  letter-spacing: .6px;
+}

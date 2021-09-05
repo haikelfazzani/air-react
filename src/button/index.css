@@ -16,3 +16,7 @@
   cursor: pointer;
   -webkit-font-smoothing: antialiased;
 }
+
+.btn:hover {
+  opacity: 0.8;
+}
