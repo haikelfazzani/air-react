@@ -50,7 +50,7 @@ ul {
   padding: 0;
 }
 
-li {
+aside li {
   padding: 10px 15px;
   border-bottom: 1px solid rgb(61, 61, 61);
 }
@@ -63,3 +63,23 @@ a {
 a:hover {
   opacity: .8;
 }
+
+.editor {
+  display: flex;
+  width: 100%;
+}
+
+.editor * {outline: none !important;}
+
+.editor>*{width: 50%; border: 1px solid #ddd; padding: 20px; }
+
+.doc>pre {
+  background: #2b2b2b;
+  color: #fff;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+.d-flex {display: flex;}
+
+.w-100 {width: 100%;}

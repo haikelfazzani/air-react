@@ -1,31 +1,41 @@
 import React from 'react';
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { darcula } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import ReactMarkdown from 'react-markdown'
-
 import Button from '../lib/button/index'
+
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'live-reacto'
+
 
 export default function ButtonDoc () {
 
-  const code = `<Button 
-  className="btn"
-  type="button" 
-  onClick={()=> {
-    alert('ok' )
-  }}
-/>Click here</Button>`;
+  const code = `function App() {
+  return <Button 
+    className="btn" type="button" onClick={()=> {
+      alert('ok' )
+    }}>Click here
+  </Button>
+}
 
-const markdown = `# Button
-The Button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.
+render(<App />)`;
 
-## Import
-import { Button } from "air-react"
-`;
+  return (<div className="doc">
+    <h1>Button</h1>
+    <p>The Button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.</p>
 
-  return (<>
-    <ReactMarkdown children={markdown} />
-    <Button className="btn" onClick={() => { alert('ok') }}>Click here</Button>
-    
-    <SyntaxHighlighter language="jsx" style={darcula}>{code}</SyntaxHighlighter>
-  </>);
+    <h3>Import</h3>
+    <pre>import &#123; Button &#125; from "air-react</pre>
+
+    <h3>Usage</h3>
+    <pre>{code}</pre>
+
+    <h3>Playground</h3>
+    <LiveProvider code={code}
+      externals={[ // add an external component or library (styledComponent, etc..)
+        { name: 'Button', lib: Button }
+      ]}>
+      <div className="w-100 d-flex editor">
+        <LiveEditor />
+        <LivePreview />
+      </div>
+      <LiveError />
+    </LiveProvider>
+  </div>);
 }
