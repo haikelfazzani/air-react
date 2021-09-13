@@ -1,20 +1,20 @@
 {
   "name": "air-react",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "High performance react components library.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "files": [
-    "src/*"
+    "dist/*"
   ],
   "scripts": {
     "watch": "set NODE_ENV=development && rollup -w -c",
     "build": "set NODE_ENV=production && rollup -c"
   },
   "peerDependencies": {
-    "prop-types": "^15.7.2",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "prop-types": ">=15.7.2",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",

@@ -15,7 +15,7 @@ export default {
     {
       file: packageJson.main,
       format: "cjs",
-      sourcemap: true
+      sourcemap: process.env.NODE_ENV !== 'production'
     },
     {
       file: packageJson.module,
