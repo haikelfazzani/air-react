@@ -8,8 +8,8 @@
     "src/*"
   ],
   "scripts": {
-    "watch": "rollup -w -c",
-    "build": "rollup -c"
+    "watch": "set NODE_ENV=development && rollup -w -c",
+    "build": "set NODE_ENV=production && rollup -c"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",

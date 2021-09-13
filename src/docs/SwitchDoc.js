@@ -1,5 +1,5 @@
 import React from 'react';
-import Switch from '../lib/switch/index'
+import Switch from '../lib/components/switch/index'
 
 import { LiveProvider, LiveEditor, LivePreview } from 'live-reacto'
 

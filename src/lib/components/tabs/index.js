@@ -5,13 +5,14 @@ export function Tabs (props) {
 
   const [index, setIndex] = useState(0);
 
-  const onTab = tabIndex =>{
+  const onTab = tabIndex => {
     setIndex(tabIndex)
   }
 
   return (<div className="tabs">
     <ul>
-      {props.children.map((child, i) => <li key={i} onClick={() => onTab(i)}>{child.props.label}</li>)}
+      {props.children.map((child, i) => <li className={index === i ? "active" : ""}
+        key={i} onClick={() => onTab(i)}>{child.props.label}</li>)}
     </ul>
 
     <div>

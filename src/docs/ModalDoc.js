@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Modal from '../lib/modal/index'
+import Modal from '../lib/components/modal/index'
+import '../lib/components/shared.css'
 
 export default function ModalDoc () {
 

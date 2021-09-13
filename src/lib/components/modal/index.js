@@ -4,7 +4,7 @@ import './index.css';
 
 function Portal ({ children }) {
   return ReactDOM.createPortal(
-    <div className="modal">{children}</div>, document.getElementById('modal')
+    <div className="modal d-flex justify-between align-center">{children}</div>, document.getElementById('modal')
   );
 }
 

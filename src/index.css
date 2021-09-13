@@ -81,29 +81,6 @@ a:hover {
   border-radius: 7px;
 }
 
-.btn {
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: .6px;
-  line-height: 24px;
-  padding: 6px 24px;
-  pointer-events: auto;
-  color: #fff;
-  background: #1a73e8;
-  border: 0;
-  text-transform: capitalize;
-  transform: scale(1);
-  transition: opacity .25s ease-in-out;
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-font-smoothing: antialiased;
-}
-
-.btn:hover {
-  opacity: 0.8;
-}
-
 .d-flex {display: flex;}
 
 .w-100 {width: 100%;}

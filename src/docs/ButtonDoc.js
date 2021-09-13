@@ -1,7 +1,8 @@
 import React from 'react';
-import Button from '../lib/button/index'
-
 import { LiveProvider, LiveEditor, LivePreview } from 'live-reacto';
+import Button from '../lib/components/button/index'
+import '../lib/components/shared.css'
+
 
 export default function ButtonDoc () {
 

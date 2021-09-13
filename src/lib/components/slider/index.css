@@ -8,7 +8,7 @@
 
 .slider-rail {
   position: absolute;
-  background-color: #e9e9e9;
+  background-color: var(--light);
   border-radius: 6px;
 }
 
@@ -18,8 +18,8 @@
   height: 14px;
   cursor: grab;
   border-radius: 50%;
-  border: 2px solid #96dbfa;
-  background-color: #fff;
+  border: 2px solid var(--blue);
+  background-color: var(--white);
   outline: none;
 }
 

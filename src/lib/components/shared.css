@@ -1,0 +1,60 @@
+:root {
+  --white: #fff;
+  --black:#000;
+  --blue:#1a73e8;
+  --light:#c4c4c4;
+  --muted:#494949;
+  --transparent:rgba(0, 0, 0, 0.575);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/****************** Button ******************/
+.btn {
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .6px;
+  line-height: 24px;
+  padding: 6px 24px;
+  pointer-events: auto;
+  color: var(--white);
+  background: var(--blue);
+  border: 0;
+  text-transform: capitalize;
+  transform: scale(1);
+  transition: opacity .25s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/****************** Display ******************/
+
+.d-flex {display: flex;}
+
+.flex-column {flex-direction: column;}
+
+.justify-between {justify-content: space-between;}
+
+.align-center {align-items: center;}
+
+/***************Animation************/
+.scale {
+  animation: scale 0.25s;
+}
+
+@keyframes scale {
+  0% { transform: scale(0.5); }
+  100% {transform: scale(1);}
+}

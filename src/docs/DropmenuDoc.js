@@ -1,5 +1,6 @@
 import React from 'react';
-import DropMenu from '../lib/drop-menu/index'
+import DropMenu from '../lib/components/drop-menu/index'
+import '../lib/components/shared.css'
 
 import { LiveProvider, LiveEditor, LivePreview } from 'live-reacto'
 

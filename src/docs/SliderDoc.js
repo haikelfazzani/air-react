@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from '../lib/slider/index'
+import Slider from '../lib/components/slider/index'
 
 import { LiveProvider, LiveEditor, LivePreview } from 'live-reacto'
 

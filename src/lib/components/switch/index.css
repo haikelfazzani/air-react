@@ -14,7 +14,7 @@ label {
   display: block;
   overflow: hidden;
   cursor: pointer;
-  border: 0 solid #ddd;
+  border: 0 solid var(--light);
   border-radius: 20px;
   margin: 0;
 }
@@ -35,25 +35,21 @@ label {
   padding: 0;
   line-height: 34px;
   font-size: 14px;
-  color:#fff;
+  color:var(--white);
   font-weight: bold;
   box-sizing: border-box;
 }
 
 .switch-inner:before {
-  content: attr(data-yes);
-  text-transform: uppercase;
   padding-left: 10px;
-  background-color: #4e5aff;
-  color: #fff;
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 .switch-inner:after {
-  content: attr(data-no);
-  text-transform: uppercase;
   padding-right: 10px;
-  background-color: #ddd;
-  color: #fff;
+  background-color: var(--light);
+  color: var(--white);
   text-align: right;
 }
 
@@ -61,12 +57,12 @@ label {
   display: block;
   width: 24px;
   margin: 5px;
-  background: #fff;
+  background: var(--white);
   position: absolute;
   top: 0;
   bottom: 0;
   right: 40px;
-  border: 0 solid #ddd;
+  border: 0 solid var(--light);
   border-radius: 20px;
   transition: all 0.3s ease-in 0s;
 }

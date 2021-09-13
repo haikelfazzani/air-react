@@ -16,10 +16,10 @@
   margin: 0;
 
   font-size: 1rem;
-  color: #212529;
+  color: var(--black);
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: .25rem;
   box-shadow: rgb(0 0 0 / 32%) 2px 3px 20px 0px;
 

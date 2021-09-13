@@ -4,13 +4,13 @@ import commonjs from "@rollup/plugin-commonjs";
 import postcss from "rollup-plugin-postcss";
 import babel from '@rollup/plugin-babel';
 import { terser } from "rollup-plugin-terser";
-import sass from 'rollup-plugin-sass';
+//import sass from 'rollup-plugin-sass';
 
 const path = require('path')
 const packageJson = require("./package.json");
 
 export default {
-  input: "index.js",
+  input: "components/index.js",
   output: [
     {
       file: packageJson.main,
@@ -38,6 +38,6 @@ export default {
       extract: path.resolve('dist/index.css')
     }),
     commonjs(),
-    terser()
+    process.env.NODE_ENV === 'production' ? terser() : ''
   ]
 };

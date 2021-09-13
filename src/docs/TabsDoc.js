@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tabs } from '../lib/tabs/index'
+import { Tabs } from '../lib/components/tabs/index'
 
 import { LiveProvider, LiveEditor, LivePreview } from 'live-reacto'
 

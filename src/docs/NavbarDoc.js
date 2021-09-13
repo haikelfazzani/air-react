@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown'
 
-import Navbar from '../lib/navbar/index'
+import Navbar from '../lib/components/navbar/index'
 
 export default function NavbarDoc () {
 

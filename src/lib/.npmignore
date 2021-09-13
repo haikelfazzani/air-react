@@ -4,6 +4,7 @@
 .gitignore
 .storybook
 
+components/
 storybook-static/
 stories/
 src/stories/
