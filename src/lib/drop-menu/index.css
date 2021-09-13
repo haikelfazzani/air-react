@@ -1,0 +1,32 @@
+.drop-menu {
+  position: relative;
+}
+
+.drop-menu-items {
+  display: none;
+
+  position: absolute;
+  will-change: transform;
+  top: 0;
+  left: 0;
+
+  z-index: 1000;
+
+  padding: 0.5rem 0;
+  margin: 0;
+
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  border-radius: .25rem;
+  box-shadow: rgb(0 0 0 / 32%) 2px 3px 20px 0px;
+
+  transform: translate(0, 45px);
+}
+
+.drop-menu-items>* {
+  margin: 0;
+  padding: .4rem 1.5rem;
+}

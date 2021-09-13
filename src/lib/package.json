@@ -1,6 +1,6 @@
 {
   "name": "air-react",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "High performance react components library.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",

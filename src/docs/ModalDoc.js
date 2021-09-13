@@ -5,7 +5,8 @@ export default function ModalDoc () {
 
   const [show, setShow] = useState(false);
 
-  const code = `const [show, setShow] = useState(false);
+  const code = `// create <div id="modal"></div> in public/index.html
+const [show, setShow] = useState(false);
 
 <button onClick={() => { setShow(!show) }}>click here</button>
 
@@ -18,10 +19,10 @@ export default function ModalDoc () {
     <p>A dialog is a window overlaid on either the primary window or another dialog window. Content behind a modal dialog is inert, meaning that users cannot interact with it.</p>
 
     <h3>Import</h3>
-    <pre><code class="language-js">import &#123; Modal &#125; from "air-react</code></pre>
+    <pre><code className="language-js">import &#123; Modal &#125; from "air-react</code></pre>
 
     <h3>Usage</h3>
-    <pre><code class="language-jsx">{code}</code></pre>
+    <pre><code className="language-jsx">{code}</code></pre>
 
     <button className="btn" onClick={() => { setShow(!show) }}>click here</button>
 

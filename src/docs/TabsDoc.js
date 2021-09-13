@@ -4,26 +4,17 @@ import { Tabs } from '../lib/tabs/index'
 import { LiveProvider, LiveEditor, LivePreview } from 'live-reacto'
 
 export default function SwitchDoc () {
-  const code = `function App() {
-    
-  const [status, seStatus] = React.useState(false);
-
-  return <>
-    <Tabs>
-      <div label="a">a content</div>
-      <div label="b">b content</div>
-      <div label="c">c content</div>
-    </Tabs>
-  </>
-}
-
-render(<App />)`;
+  const code = `<Tabs>
+  <div label={<div>a</div>}>a content</div>
+  <div label={<div>b</div>}>b content</div>
+  <div label={<div>c</div>}>c content</div>
+</Tabs>`;
 
   return (<div className="doc">
     <h1>Tabs</h1>
 
     <h3>Import</h3>
-    <pre>import &#123; Tabs, Tab &#125; from "air-react</pre>
+    <pre>import &#123; Tabs &#125; from "air-react</pre>
 
     <h3>Usage</h3>
     <pre>{code}</pre>

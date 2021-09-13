@@ -16,7 +16,7 @@ export default function ButtonDoc () {
     <p>The Button component is used to trigger an action or event, such as submitting a form, opening a dialog, canceling an action, or performing a delete operation.</p>
 
     <h3>Import</h3>
-    <pre><code class="language-js">import &#123; Button &#125; from "air-react</code></pre>
+    <pre><code className="language-js">import &#123; Button &#125; from "air-react</code></pre>
 
     <h3>Usage</h3>
     <pre>{code}</pre>

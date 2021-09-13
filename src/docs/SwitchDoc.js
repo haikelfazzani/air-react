@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactMarkdown from 'react-markdown'
 import Switch from '../lib/switch/index'
 
 import { LiveProvider, LiveEditor, LivePreview } from 'live-reacto'
@@ -24,7 +23,7 @@ render(<App />)`;
 
   return (<div className="doc">
     <h1>Switch</h1>
-    <ReactMarkdown children={`The Switch component is used as an alternative for the Checkbox component. You can switch between enabled or disabled states.`} />
+    <p>The Switch component is used as an alternative for the Checkbox component. You can switch between enabled or disabled states.</p>
 
     <h3>Import</h3>
     <pre>import &#123; Switch &#125; from "air-react</pre>

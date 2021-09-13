@@ -1,33 +1,30 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Switch, Route, Redirect, Link } from 'react-router-dom';
-import ButtonDoc from "./docs/ButtonDoc";
+import Home from "./pages/Home";
 
-const ModalDoc = lazy(() => import("./docs/ModalDoc"));
-const SwitchDoc = lazy(() => import("./docs/SwitchDoc"));
-const NavbarDoc = lazy(() => import("./docs/NavbarDoc"));
-const TabsDoc = lazy(() => import("./docs/TabsDoc"));
+const routes = [
+  { path: '', comp: Home },
+  { path: 'modal', comp: lazy(() => import("./docs/ModalDoc")) },
+  { path: 'button', comp: lazy(() => import("./docs/ButtonDoc")) },
+  { path: 'switch', comp: lazy(() => import("./docs/SwitchDoc")) },
+  { path: 'tabs', comp: lazy(() => import("./docs/TabsDoc")) },
+  { path: 'dropmenu', comp: lazy(() => import("./docs/DropmenuDoc")) },
+  { path: 'slider', comp: lazy(() => import("./docs/SliderDoc")) }
+];
 
 function App () {
   return (<BrowserRouter>
     <main>
       <aside>
         <ul>
-          <li><Link to="/">Button</Link></li>
-          <li><Link to="/modal">Modal</Link></li>
-          <li><Link to="/switch">switch</Link></li>
-          <li><Link to="/tabs">tabs</Link></li>
-          {/* <li><Link to="/navbar">navbar</Link></li> */}
+          {routes.map((route, i) => <li key={i}><Link to={"/" + route.path}>{route.path || 'Home'}</Link></li>)}
         </ul>
       </aside>
 
       <div className="content">
         <Suspense fallback={<div>...</div>}>
           <Switch>
-            <Route exact path="/" component={ButtonDoc} />
-            <Route path="/modal" component={ModalDoc} />
-            <Route path="/switch" component={SwitchDoc} />
-            <Route path="/navbar" component={NavbarDoc} />
-            <Route path="/tabs" component={TabsDoc} />
+            {routes.map((route, i) => <Route key={i} exact path={'/' + route.path} component={route.comp} />)}
             <Redirect path="*" to="/" />
           </Switch>
         </Suspense>

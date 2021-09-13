@@ -1,0 +1,28 @@
+.slider {
+  position: relative;
+  border-radius: 6px;
+  touch-action: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.slider-rail {
+  position: absolute;
+  background-color: #e9e9e9;
+  border-radius: 6px;
+}
+
+.slider-handler {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  cursor: grab;
+  border-radius: 50%;
+  border: 2px solid #96dbfa;
+  background-color: #fff;
+  outline: none;
+}
+
+.slider-handler:focus {
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.6);
+}
