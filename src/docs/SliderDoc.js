@@ -27,7 +27,7 @@ render(<App />)`;
 
   return (<div className="doc">
     <h1>Slider</h1>
-    <p>The Slider component is used as an alternative for the Checkbox component. You can switch between enabled or disabled states.</p>
+    <p>The Slider is used to allow users to make selections from a range of values.</p>
 
     <h3>Import</h3>
     <pre>import &#123; Slider &#125; from "air-react</pre>

@@ -12,13 +12,11 @@
   margin: auto;
   height: 70%;
   width: 70%;
-  background-color: var(--white);
 }
 
 .btn-close-modal {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: inherit;
-  font-size: 18px;
+  top: 10px;
+  right: 0;
+  background-color: transparent;
 }

@@ -1,0 +1,11 @@
+.tag:not(body) {
+  align-items: center;
+  border-radius: .375em;
+  display: inline-flex;  
+  height: 2em;
+  justify-content: center;
+  line-height: 1.5;
+  padding-left: .75em;
+  padding-right: .75em;
+  white-space: nowrap;
+}

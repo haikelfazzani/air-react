@@ -11,8 +11,8 @@ function Portal ({ children }) {
 export default function Modal ({ children, show, setShow }) {
   return (<>
     {show && <Portal>
-      <button className="btn btn-close-modal" onClick={() => { setShow(!show) }}>x</button>
-      <div className="modal-content scale">{children}</div>
+      <button className="btn btn-close-modal lg" onClick={() => { setShow(!show) }}>x</button>
+      <div className="modal-content box scale">{children}</div>
     </Portal>}
   </>);
 }

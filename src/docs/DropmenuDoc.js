@@ -19,7 +19,7 @@ export default function DropmenuDoc () {
 
   return (<div className="doc">
     <h1>DropMenu</h1>
-    <p>The DropMenu component is used as an alternative for the Checkbox component. You can switch between enabled or disabled states.</p>
+    <p>dropdown menu button.</p>
 
     <h3>Import</h3>
     <pre>import &#123; DropMenu &#125; from "air-react</pre>

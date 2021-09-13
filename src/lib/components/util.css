@@ -1,0 +1,33 @@
+.d-flex {display: flex;}
+
+.flex-column {flex-direction: column;}
+
+.justify-between {justify-content: space-between;}
+
+.align-center {align-items: center;}
+
+/****************** Spacing ******************/
+.w-100 {width: 100%;}
+.h-100 {height: 100%;}
+
+.sm { font-size: .75rem; }
+.lg { font-size: 1.5rem; }
+.md { font-size: 1.25rem; }
+/****************** Colors ******************/
+.black {color: var(--black);}
+.bg-black {background-color: var(--black);}
+
+.white {color: var(--white);}
+.bg-white {background-color: var(--white);}
+
+.blue {color: var(--blue);}
+.bg-blue {background-color: var(--blue);}
+
+.red {color: var(--red);}
+.bg-red {background-color: var(--red);}
+
+.gray {color: var(--gray);}
+.bg-gray {background-color: var(--gray);}
+
+.ocean-green {color: var(--ocean-green);}
+.bg-ocean-green {background-color: var(--ocean-green);}

@@ -9,7 +9,10 @@ const routes = [
   { path: 'switch', comp: lazy(() => import("./docs/SwitchDoc")) },
   { path: 'tabs', comp: lazy(() => import("./docs/TabsDoc")) },
   { path: 'dropmenu', comp: lazy(() => import("./docs/DropmenuDoc")) },
-  { path: 'slider', comp: lazy(() => import("./docs/SliderDoc")) }
+  { path: 'slider', comp: lazy(() => import("./docs/SliderDoc")) },
+  { path: 'spinner', comp: lazy(() => import("./docs/SpinnerDoc")) },
+  { path: 'input', comp: lazy(() => import("./docs/InputDoc")) },
+  { path: 'tag', comp: lazy(() => import("./docs/TagDoc")) }
 ];
 
 function App () {

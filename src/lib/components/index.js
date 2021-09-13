@@ -7,6 +7,7 @@ import DropMenu from './drop-menu/index.js'
 import Slider from './slider/index.js'
 import { Tabs } from './Tabs/index.js';
 
+import './util.css';
 
 export {
   Modal,

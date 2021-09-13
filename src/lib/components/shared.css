@@ -2,9 +2,11 @@
   --white: #fff;
   --black:#000;
   --blue:#1a73e8;
+  --gray:#4a4a4a;
+  --red:#f14668;
+  --ocean-green:#00d1b2;
   --light:#c4c4c4;
-  --muted:#494949;
-  --transparent:rgba(0, 0, 0, 0.575);
+  --transparent:#0a0a0adb;
 }
 
 * {
@@ -13,6 +15,8 @@
 
 body {
   margin: 0;
+  font-size: 1rem;
+  letter-spacing: .6px;
 }
 
 /****************** Button ******************/
@@ -39,16 +43,39 @@ body {
   opacity: 0.8;
 }
 
-/****************** Display ******************/
+/****************** Form ******************/
+textarea,input {
+  padding: 6px 14px;
+  font-size: 14px;
+  line-height: 24px;
+  border: 1px solid var(--light);
+  border-radius: .375em;
+}
 
-.d-flex {display: flex;}
+.textarea:focus,input:active, input:focus, textarea:active {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 0.125em rgb(72 95 199 / 25%);
+}
+/****************** Card and box ******************/
+.box {
+  background-color: var(--white);
+  border-radius: 6px;
+  box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+  color: var(--gray);
+  display: block;
+  padding: 1.25rem;
+}
 
-.flex-column {flex-direction: column;}
-
-.justify-between {justify-content: space-between;}
-
-.align-center {align-items: center;}
-
+/**************** Spinner ******************/
+.spinner {
+  display: inline-block;
+  width: 2.2rem;
+  height: 2.2rem;
+  vertical-align: text-bottom;
+  border: .15em solid var(--black);
+  border-right-color: var(--light);
+  border-radius: 50%;  
+}
 /***************Animation************/
 .scale {
   animation: scale 0.25s;
@@ -57,4 +84,14 @@ body {
 @keyframes scale {
   0% { transform: scale(0.5); }
   100% {transform: scale(1);}
+}
+
+.rotate {
+  animation: spinner-border .75s linear infinite;
+}
+
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg);
+  }
 }
