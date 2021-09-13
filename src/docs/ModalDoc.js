@@ -14,6 +14,15 @@ export default function ModalDoc () {
 </Modal>`;
 
   return (<>
+    <h1>Modal</h1>
+    <p>A dialog is a window overlaid on either the primary window or another dialog window. Content behind a modal dialog is inert, meaning that users cannot interact with it.</p>
+
+    <h3>Import</h3>
+    <pre><code class="language-js">import &#123; Modal &#125; from "air-react</code></pre>
+
+    <h3>Usage</h3>
+    <pre><code class="language-jsx">{code}</code></pre>
+
     <button className="btn" onClick={() => { setShow(!show) }}>click here</button>
 
     <Modal show={show} setShow={setShow}>

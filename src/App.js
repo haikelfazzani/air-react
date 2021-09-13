@@ -5,6 +5,7 @@ import ButtonDoc from "./docs/ButtonDoc";
 const ModalDoc = lazy(() => import("./docs/ModalDoc"));
 const SwitchDoc = lazy(() => import("./docs/SwitchDoc"));
 const NavbarDoc = lazy(() => import("./docs/NavbarDoc"));
+const TabsDoc = lazy(() => import("./docs/TabsDoc"));
 
 function App () {
   return (<BrowserRouter>
@@ -14,6 +15,7 @@ function App () {
           <li><Link to="/">Button</Link></li>
           <li><Link to="/modal">Modal</Link></li>
           <li><Link to="/switch">switch</Link></li>
+          <li><Link to="/tabs">tabs</Link></li>
           {/* <li><Link to="/navbar">navbar</Link></li> */}
         </ul>
       </aside>
@@ -25,6 +27,7 @@ function App () {
             <Route path="/modal" component={ModalDoc} />
             <Route path="/switch" component={SwitchDoc} />
             <Route path="/navbar" component={NavbarDoc} />
+            <Route path="/tabs" component={TabsDoc} />
             <Redirect path="*" to="/" />
           </Switch>
         </Suspense>

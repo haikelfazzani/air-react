@@ -38,6 +38,6 @@ export default {
       extract: path.resolve('dist/index.css')
     }),
     commonjs(),
-    //terser()
+    terser()
   ]
 };

@@ -1,0 +1,12 @@
+.tabs ul {
+  display: flex;
+}
+
+.tabs li {
+  padding: 10px 15px;  
+  color: rgb(51, 51, 51);
+}
+
+.active {
+  color: #000;
+}

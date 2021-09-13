@@ -1,11 +1,25 @@
-import React from 'react';
-import './index.css';
+import React from "react";
+import "./index.css";
 
-export default function Switch ({ onToggle, className, status = true }) {
+export default function Switch ({ text, name, checked, onChange }) {
   return (
-    <div className={"sc-container " + className}>
-      <div className="sc-switch"></div>
-      <div onClick={onToggle} className={"sc-checked " + (status ? '' : 'sc-unchecked')}></div>
+    <div className="vertical-align justify-between">
+
+      <span>{text}</span>
+
+      <div className="switch small">
+        <input
+          type="checkbox"
+          name={name}
+          id={name}
+          checked={checked}
+          onChange={onChange}
+        />
+        <label tabIndex="1" htmlFor={name} >
+          <span className="switch-inner" tabIndex="-1" />
+          <span className="switch-circle" tabIndex="-1" />
+        </label>
+      </div>
     </div>
   );
-}
+};

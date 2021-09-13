@@ -1,6 +1,6 @@
 {
   "name": "air-react",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "High performance react components library.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -9,8 +9,7 @@
   ],
   "scripts": {
     "watch": "rollup -w -c",
-    "build": "rollup -c",
-    "publish": "cd src/lib"
+    "build": "rollup -c"
   },
   "peerDependencies": {
     "prop-types": "^15.7.2",

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown'
 import Switch from '../lib/switch/index'
 
-import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'live-reacto'
+import { LiveProvider, LiveEditor, LivePreview } from 'live-reacto'
 
 export default function SwitchDoc () {
   const code = `function App() {
@@ -11,10 +11,12 @@ export default function SwitchDoc () {
 
   return <>
     <Switch 
-      className="color-orange" onToggle={() => seStatus(!status) } 
-      status={status} 
+      text="Change theme"
+      name="theme"    
+      onChange={(e) => seStatus(e.target.checked) } 
+      checked={status} 
     />
-    {document.body.style.background = status ? 'red':''}
+    {document.body.style.background = status ? '#f1f1f1':''}
   </>
 }
 
@@ -31,15 +33,11 @@ render(<App />)`;
     <pre>{code}</pre>
 
     <h3>Playground</h3>
-    <LiveProvider code={code}
-      externals={[ // add an external component or library (styledComponent, etc..)
-        { name: 'Switch', lib: Switch }
-      ]}>
+    <LiveProvider code={code} bindings={{Switch}}>
       <div className="w-100 d-flex editor">
         <LiveEditor />
         <LivePreview />
       </div>
-      <LiveError />
     </LiveProvider>
   </div>);
 }
