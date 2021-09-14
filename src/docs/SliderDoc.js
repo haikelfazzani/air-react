@@ -1,7 +1,7 @@
 import React from 'react';
-import Slider from '../lib/components/slider/index'
-
 import { LiveProvider, LiveEditor, LivePreview } from 'live-reacto'
+import { Slider } from '../lib/components/index'
+import 'prismjs/themes/prism-coy.css'
 
 export default function SliderDoc () {
   const code = `function App() {
@@ -29,18 +29,14 @@ render(<App />)`;
     <h1>Slider</h1>
     <p>The Slider is used to allow users to make selections from a range of values.</p>
 
-    <h3>Import</h3>
-    <pre>import &#123; Slider &#125; from "air-react</pre>
+    <h3># Import</h3>
+    <LiveProvider code={`import { Slider } from "air-react`} onlyHighlight={true} readOnly={true}>
+      <LiveEditor />
+    </LiveProvider>
 
-    <h3>Usage</h3>
-    <pre>{code}</pre>
-
-    <h3>Playground</h3>
-    <LiveProvider code={code} bindings={{Slider}}>
-      <div className="w-100 d-flex editor">
-        <LiveEditor />
-        <LivePreview />
-      </div>
+    <h3># Usage</h3>
+    <LiveProvider code={code} bindings={{ Slider }}>
+      <div className="w-100 d-flex editor"><LiveEditor /><LivePreview /></div>
     </LiveProvider>
   </div>);
 }

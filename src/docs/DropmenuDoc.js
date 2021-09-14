@@ -1,6 +1,6 @@
 import React from 'react';
-import DropMenu from '../lib/components/drop-menu/index'
-import '../lib/components/shared.css'
+import {DropMenu} from '../lib/components/index'
+import 'prismjs/themes/prism-coy.css'
 
 import { LiveProvider, LiveEditor, LivePreview } from 'live-reacto'
 
@@ -21,18 +21,14 @@ export default function DropmenuDoc () {
     <h1>DropMenu</h1>
     <p>dropdown menu button.</p>
 
-    <h3>Import</h3>
-    <pre>import &#123; DropMenu &#125; from "air-react</pre>
+    <h3># Import</h3>
+    <LiveProvider code={`import { DropMenu } from "air-react`} onlyHighlight={true} readOnly={true}>
+      <LiveEditor />
+    </LiveProvider>
 
-    <h3>Usage</h3>
-    <pre>{code}</pre>
-
-    <h3>Playground</h3>
-    <LiveProvider code={code} bindings={{DropMenu}}>
-      <div className="w-100 d-flex editor">
-        <LiveEditor />
-        <LivePreview />
-      </div>
+    <h3># Usage</h3>
+    <LiveProvider code={code} bindings={{ DropMenu }}>
+      <div className="w-100 d-flex editor"><LiveEditor /><LivePreview /></div>
     </LiveProvider>
   </div>);
 }

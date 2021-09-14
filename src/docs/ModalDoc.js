@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Modal from '../lib/components/modal/index'
-import '../lib/components/shared.css'
+import { LiveProvider, LiveEditor } from 'live-reacto';
+import { Modal } from '../lib/components/index'
+import 'prismjs/themes/prism-coy.css'
 
 export default function ModalDoc () {
 
@@ -19,13 +20,17 @@ const [show, setShow] = useState(false);
     <h1>Modal</h1>
     <p>A dialog is a window overlaid on either the primary window or another dialog window. Content behind a modal dialog is inert, meaning that users cannot interact with it.</p>
 
-    <h3>Import</h3>
-    <pre><code className="language-js">import &#123; Modal &#125; from "air-react</code></pre>
+    <h3># Import</h3>
+    <LiveProvider code={`import { Modal } from "air-react`} onlyHighlight={true} readOnly={true}>
+      <LiveEditor />
+    </LiveProvider>
 
-    <h3>Usage</h3>
-    <pre><code className="language-jsx">{code}</code></pre>
+    <h3># Usage</h3>
+    <LiveProvider code={code} onlyHighlight={true} readOnly={true}>
+      <LiveEditor />
+    </LiveProvider>
 
-    <button className="btn" onClick={() => { setShow(!show) }}>click here</button>
+    <button className="btn mt-3" onClick={() => { setShow(!show) }}>click here</button>
 
     <Modal show={show} setShow={setShow}>
       <div>Hello</div>

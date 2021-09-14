@@ -1,5 +1,5 @@
 import React from 'react';
-import Switch from '../lib/components/switch/index'
+import { Switch } from '../lib/components/index'
 
 import { LiveProvider, LiveEditor, LivePreview } from 'live-reacto'
 
@@ -25,18 +25,14 @@ render(<App />)`;
     <h1>Switch</h1>
     <p>The Switch component is used as an alternative for the Checkbox component. You can switch between enabled or disabled states.</p>
 
-    <h3>Import</h3>
-    <pre>import &#123; Switch &#125; from "air-react</pre>
+    <h3># Import</h3>
+    <LiveProvider code={`import { Switch } from "air-react`} onlyHighlight={true} readOnly={true}>
+      <LiveEditor />
+    </LiveProvider>
 
-    <h3>Usage</h3>
-    <pre>{code}</pre>
-
-    <h3>Playground</h3>
-    <LiveProvider code={code} bindings={{Switch}}>
-      <div className="w-100 d-flex editor">
-        <LiveEditor />
-        <LivePreview />
-      </div>
+    <h3># Usage</h3>
+    <LiveProvider code={code} bindings={{ Switch }}>
+      <div className="w-100 d-flex editor"><LiveEditor /><LivePreview /></div>
     </LiveProvider>
   </div>);
 }

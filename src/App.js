@@ -12,8 +12,10 @@ const routes = [
   { path: 'slider', comp: lazy(() => import("./docs/SliderDoc")) },
   { path: 'spinner', comp: lazy(() => import("./docs/SpinnerDoc")) },
   { path: 'input', comp: lazy(() => import("./docs/InputDoc")) },
-  { path: 'tag', comp: lazy(() => import("./docs/TagDoc")) }
+  { path: 'badge', comp: lazy(() => import("./docs/BadgeDoc")) }
 ];
+
+routes.sort((a,b) => a.path.localeCompare(b.path))
 
 function App () {
   return (<BrowserRouter>

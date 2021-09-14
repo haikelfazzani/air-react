@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "live-reacto": "^1.0.8",
+    "live-reacto": "^1.0.9",
     "marked": "^3.0.2",
     "prismjs": "^1.24.1",
     "prop-types": "^15.7.2",

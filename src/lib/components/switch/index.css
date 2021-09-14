@@ -22,7 +22,6 @@ label {
 .switch-inner {
   display: block;
   width: 200%;
-  margin-left: -100%;
   transition: margin 0.3s ease-in 0s;
 }
 
@@ -55,8 +54,6 @@ label {
 
 .switch-circle {
   display: block;
-  width: 24px;
-  margin: 5px;
   background: var(--white);
   position: absolute;
   top: 0;

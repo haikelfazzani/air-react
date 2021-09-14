@@ -1,6 +1,6 @@
 {
   "name": "air-react",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "High performance react components library.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -41,6 +41,6 @@
   "author": "Haikel Fazzani",
   "license": "MIT",
   "homepage": "https://air-react.netlify.app",
-  "bugs": "https://github.com/haikelfazzani/air-react-library/issues",
-  "repository": "https://github.com/haikelfazzani/air-react-library.git"
+  "bugs": "https://github.com/haikelfazzani/air-react/issues",
+  "repository": "https://github.com/haikelfazzani/air-react.git"
 }

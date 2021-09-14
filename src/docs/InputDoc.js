@@ -1,7 +1,8 @@
 import React from 'react';
 import { LiveProvider, LiveEditor, LivePreview } from 'live-reacto';
-import Input from '../lib/components/input/index'
-import '../lib/components/shared.css'
+import { Input } from '../lib/components/index'
+
+import 'prismjs/themes/prism-coy.css'
 
 export default function ButtonDoc () {
 
@@ -18,25 +19,20 @@ export default function ButtonDoc () {
     />
     <p>{state}</p>
   </>
-}`;
+}`;  
 
   return (<div className="doc">
     <h1>Input</h1>
     <p>The Input is a component that is used to get user input in a text field.</p>
 
-    <h3>Import</h3>
-    <pre><code className="language-js">import &#123; Input &#125; from "air-react</code></pre>
+    <h3># Import</h3>
+    <LiveProvider code={`import { Input } from "air-react`} onlyHighlight={true} readOnly={true}>
+      <LiveEditor />
+    </LiveProvider>
 
-    <h3>Usage</h3>
-    <pre>{code}</pre>
-
-    <h3>Playground</h3>
-    <LiveProvider code={code}
-      bindings={{Input}}>
-      <div className="w-100 d-flex editor">
-        <LiveEditor />
-        <LivePreview />
-      </div>
+    <h3># Usage</h3>
+    <LiveProvider code={code} bindings={{ Input }}>
+      <div className="w-100 d-flex editor"><LiveEditor /><LivePreview /></div>
     </LiveProvider>
   </div>);
 }

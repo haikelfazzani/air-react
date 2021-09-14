@@ -50,6 +50,7 @@ textarea,input {
   line-height: 24px;
   border: 1px solid var(--light);
   border-radius: .375em;
+  outline: none;
 }
 
 .textarea:focus,input:active, input:focus, textarea:active {

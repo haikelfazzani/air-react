@@ -1,4 +1,4 @@
-.tag:not(body) {
+.badge:not(body) {
   align-items: center;
   border-radius: .375em;
   display: inline-flex;  
