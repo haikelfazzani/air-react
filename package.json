@@ -1,43 +1,57 @@
 {
-  "name": "air-react-docs",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "live-reacto": "^1.0.9",
-    "marked": "^3.0.2",
-    "prismjs": "^1.24.1",
-    "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-error-boundary": "^3.1.3",
-    "react-markdown": "^7.0.1",
-    "react-router-dom": "^5.3.0",
-    "react-scripts": "4.0.3",
-    "react-simple-code-editor": "^0.11.0",
-    "web-vitals": "^1.0.1"
-  },
+  "name": "air-react",
+  "version": "0.0.10",
+  "description": "High performance React components library.",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "/lib"
+  ],
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
+    "predeploy": "npm run build-storybook",
+    "deploy-storybook": "npm run predeploy && gh-pages -d storybook-static"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "peerDependencies": {
+    "react": ">=16.13.0",
+    "react-dom": ">=16.13.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "devDependencies": {
+    "@babel/core": ">=7.12.9",
+    "@rollup/plugin-commonjs": ">=17.0.0",
+    "@rollup/plugin-node-resolve": ">=11.0.0",
+    "@storybook/addon-actions": ">=6.1.9",
+    "@storybook/addon-essentials": ">=6.1.9",
+    "@storybook/addon-links": ">=6.1.9",
+    "@storybook/react": ">=6.1.9",
+    "@types/react": ">=17.0.0",
+    "babel-loader": ">=8.2.2",
+    "gh-pages": ">=3.2.3",
+    "postcss": "^8.2.1",
+    "react": ">=17.0.1",
+    "react-dom": ">=17.0.1",
+    "rollup": ">=2.70.1",
+    "rollup-plugin-peer-deps-external": ">=2.2.4",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-typescript2": ">=0.31.2",
+    "typescript": ">=4.1.2"
+  },
+  "np": {
+    "publish": false,
+    "tests": false
+  },
+  "keywords": [
+    "react",
+    "ui",
+    "library",
+    "component"
+  ],
+  "author": "Haikel Fazzani",
+  "license": "MIT",
+  "homepage": "https://air-react.netlify.app",
+  "bugs": "https://github.com/haikelfazzani/air-react/issues",
+  "repository": "https://github.com/haikelfazzani/air-react.git"
 }

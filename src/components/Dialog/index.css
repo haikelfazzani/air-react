@@ -1,0 +1,47 @@
+.Dialog {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.493);
+}
+
+.Dialog-content {
+  max-width: 600px;
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 7px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 11px 15px -7px, rgb(0 0 0 / 14%) 0px 24px 38px 3px, rgb(0 0 0 / 12%) 0px 9px 46px 8px;
+}
+
+.Dialog-actions {
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.Dialog-actions > button {
+  background-color: inherit;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-bottom: 0;
+  padding-right: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.Dialog-actions > button:hover { opacity: 0.8; }
+
+.scale {animation: scale 0.25s;}
+
+@keyframes scale {
+  0% {transform: scale(0.5);}
+  100% {transform: scale(1);}
+}

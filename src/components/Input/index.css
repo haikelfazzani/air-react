@@ -1,0 +1,11 @@
+input:not([type]), input[type=text], input[type=email], input[type=password], textarea {
+  display: block;
+  width: 100%;
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px solid var(--iron);
+  font: inherit;
+  padding: 0.8em;
+  line-height: 1;
+  border-radius: 3px;
+}
